@@ -5,4 +5,4 @@
 ## Installation
 
 ```bash
-npm install sql-validateur
+npm install @remisaurel/sql-validateur
