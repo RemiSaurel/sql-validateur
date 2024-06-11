@@ -1,5 +1,5 @@
 {
-  "name": "sql-validateur",
+  "name": "@remisaurel/sql-validateur",
   "version": "0.0.1",
   "description": "A package to validate SQL queries.",
   "main": "./dist/index.js",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsup"
+    "build": "tsup-node src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "directories": {
     "test": "tests"
