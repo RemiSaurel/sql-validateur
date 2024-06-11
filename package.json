@@ -1,0 +1,30 @@
+{
+  "name": "sql-validateur",
+  "version": "0.0.1",
+  "description": "A simple SQL validator",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  },
+
+  "keywords": [],
+  "author": "Rémi Saurel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  }
+}
