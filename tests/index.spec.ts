@@ -11,6 +11,11 @@ test('valid SELECT with complex', () => {
     expect(validateSQL(query)).toBe(true);
 });
 
+test('valid SELECT with multiple tables', () => {
+    const query = "SELECT * FROM users u, commands c WHERE age > 45 AND name = 'toto';";
+    expect(validateSQL(query)).toBe(true);
+});
+
 test('invalid SELECT with complex', () => {
     const query = "SELECT * FRO users WHERE age > 45 AND name = 'toto';";
     expect(validateSQL(query)).toBe(false);

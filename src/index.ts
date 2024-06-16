@@ -19,7 +19,7 @@ export const parseSelectQuery = (query: string): SelectQuery => {
 
     const columns = tokens.slice(selectIndex + 1, fromIndex);
 
-    const from = tokens[fromIndex + 1];
+    const from = tokens.slice(fromIndex + 1, tokens.findIndex(token => token.toUpperCase() === "WHERE" || token.toUpperCase() === "GROUP" || token.toUpperCase() === "ORDER"));
 
     const whereIndex = tokens.findIndex(token => token.toUpperCase() === "WHERE");
     let where: Condition[] = [];

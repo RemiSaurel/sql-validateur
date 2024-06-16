@@ -11,7 +11,7 @@ export interface Condition {
 
 export interface SelectQuery {
     columns: Column[];
-    from: Table;
+    from: Table[];
     where?: Condition[];
     groupBy?: Column[];
     having?: Condition[];
