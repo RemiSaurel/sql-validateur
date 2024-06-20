@@ -1,5 +1,6 @@
 // tests/index.test.ts
 import { validateSQL } from '../src';
+import { expect, test } from 'vitest'
 
 test('valid SELECT query', () => {
     const query = "SELECT * FROM users;";
